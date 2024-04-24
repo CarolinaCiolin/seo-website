@@ -1,0 +1,509 @@
+html {
+	color: #fff;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif; /*se nao tiver Poppins instalado, usar alguma fonte sans-serif*/
+	margin: 0 auto; /*centralizar o conteudo do site. margin 0 em cima e embaixo e AUTO na esquerda e direita. tb poderia ser: 0 auto 0 auto*/
+	max-width: 1440px;
+	background: #101126;
+	background-size: 120% 120%;
+}
+
+header {
+	background-color: blue;
+	display: flex; /*FLEX funciona com o conceito de pai e filhos. Altera tudo o que estiver dentro do elemento que possui a classse em questao. O FLEX tem por padrao um flex-direction: row*/
+    /*flex-direction: row;*/
+	justify-content: space-between; /*propriedade do FLEX*/
+	align-items: center; /*propriedade do FLEX*/
+	padding: 0 20px 0 40px;
+	height: 80px;
+}
+
+.logo {
+	background-color: orange;
+	width: 265px;
+}
+
+header a{
+	display: flex;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu li a {
+	font-size: 16px;
+	padding: 10px 20px;
+	/*transition: 0.2s;*/
+}
+
+header .menu li a:hover {
+	font-weight: 600;
+}
+
+/*HOME*/
+
+.hero{
+	background-color: green;
+	min-height: calc(100vh - 80px); /*VH: viewport height ou altura da janela. Neste caso para deixar a .home ocupar toda a altura da janela. 80px seria a altura do menu*/
+	padding: 0 70px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1{
+	font-size: 36px;
+}
+
+.home_hero_container{
+	background-color: black;
+	display: flex;
+	flex-direction: column; /*sem isso os itens ficam um do lado do outro*/
+	gap: 30px;
+	width: 370px;
+}
+
+.home_hero_container h1 {
+	font-size: 36px;
+}
+
+.home_hero_container p {
+	font-size: 18px;
+}
+
+.home_hero_container a {
+	text-transform: uppercase;
+	background-color: yellow;
+	border-radius: 20px;
+	padding: 10px;
+	width: 370px;
+	text-align: center;
+}
+
+.uber_mich{
+	background-color: #171c7a;
+	padding: 120px 0 0 0;
+	display: flex;
+    justify-content: center;
+}
+
+.uber_mich_container{
+	background-color: #9538b7;
+	width: 900px;
+	display: flex;
+	align-items: center;
+	gap: 80px;
+}
+
+.uber_mich_text h1{
+	font-size: 56px;
+	font-weight: 600px;
+	margin-bottom: -10px;
+}
+
+.uber_mich_text hr{
+	height: 2px;
+	width: 300px;
+	background-color: #000;
+}
+
+.uber_mich_text p{
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.meine_leistungen{
+	background-color: rgb(221, 130, 12);
+	padding: 120px 70px 120px 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.meine_leistungen_container{
+	background-color: rgb(106, 221, 12);
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.meine_leistungen_container h1{
+	font-size: 18px;
+	margin-bottom: -10px;
+}
+
+.meine_leistungen_container hr{
+	height: 2px;
+	width: 300px;
+	background-color: #000;
+}
+
+.meine_leistungen_container p{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.meine_leistungen_container .icones_bg{
+	width: 90px;
+	height: 90px;
+	background-color:#9538b7;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /*espacamento horizontal, espacamento vertical, desfoque da sombra*/
+}
+
+.meine_leistungen_container .icones_img{
+	width: 50px;
+}
+
+.meine_leistungen_container a{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 600;
+	background-color: #FBFF44;
+	padding: 10px;
+	width: 245px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.meine_leistungen_title{
+	background-color: rgb(201, 248, 31);
+	width: 230px;
+}
+
+.meine_leistungen_gmb{
+	background-color: rgb(12, 144, 221);
+	border:#171c7a 2px solid;
+	border-radius: 20px;
+	width: 540px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px 20px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.meine_leistungen_seo{
+	background-color: rgb(204, 142, 196);
+	border:#171c7a 2px solid;
+	border-radius: 20px;
+	width: 430px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px 20px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.home_contact{
+	background-color: #e7105b;
+	display: flex;
+	flex-direction: column;
+	padding: 0 70px 60px 70px;
+}
+
+.home_contact_title{
+	background-color: #8a0d39;
+	text-align: center;
+}
+
+.home_contact_container{
+	background-color: #171c7a;
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 60px;
+}
+
+.home_contact_info{
+	background-color: #1b75ad;
+	width: 502px;
+}
+.home_contact h1{
+	font-size: 36px;
+}
+
+.home_contact h2{
+	font-size: 18px;
+	color: #587BE5;
+	font-weight: 300;
+}
+
+.home_contact p{
+	font-size: 16px;
+	word-spacing: 2px;
+	line-height: 29px;
+	margin-bottom: 70px;
+}
+
+.home_contact h3{
+	font-size: 18px;
+}
+
+.home_contact_form{
+	background-color: #FBFF44;
+	width: 500px;
+}
+
+.home_contact_form input{
+}
+
+.bottom{
+	background-color: 080917;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 70px;
+}
+
+.info_bottom{
+	background-color:#1b75ad;
+	width: 505px;
+}
+
+.contact_bottom{
+	background-color:#2ebbd3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.list_bottom{
+	background-color:#93c6e5;
+}
+
+.bottom p{
+	font-size: 14px;
+}
+
+.bottom h2{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.bottom h1{
+	font-size: 20px;
+}
+
+.bottom li{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+/*GOOGLE MY BUSINESS*/
+
+#gmb_hero{
+	background-color: #8a0d39;
+	padding: 0 70px;
+	display: flex;
+	align-items: center;
+	min-height: calc(100vh - 80px);
+}
+
+#gmb_hero_container{
+	background-color:#587BE5;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 560px;
+}
+
+#gmb_hero_container h1{
+	font-size: 36px;
+	font-weight: 800;
+	margin-bottom: -10px;
+}
+
+#gmb_hero_container h2{
+	font-weight: 600;
+	margin-bottom: -10px;
+	font-size: 14px;
+}
+
+#gmb_hero_container p{
+	font-size: 14px;
+	line-height: 23px;
+	width: 525px;
+}
+
+#gmb_hero_container a{
+	font-size: 16px;
+	background-color:#e7105b;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	width: 370px;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#gmb_warum{
+	background-color: #93c6e5;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 120px 0;
+	align-items: center;
+}
+
+#gmb_warum_title_container{
+	background-color: #FBFF44;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+#gmb_warum_title_container img{
+	width: 65px;
+}
+
+#gmb_warum_title h2{
+	font-size: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 10px;
+	margin-bottom: -13px;
+}
+
+#gmb_warum_title h1{
+	font-size: 36px;
+	font-weight: 800;
+}
+
+.gmb_warum_line{
+	background-color: #ffc144;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.gmb_warum_itens{
+	background-color: #ff7344;
+	padding: 30px 20px;
+	border-radius: 15px;
+	width: 315px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.gmb_warum_itens_title_line{
+	background-color: #c01f8a;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.gmb_warum_itens_number{
+	background-color: #85105e;
+	font-size: 20;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33px;
+	height: 33px;
+	border-radius: 100%;
+	border: 1px solid blue;
+}
+
+.gmb_warum_itens_title{
+	background-color: #4b0734;
+	text-align: left;
+}
+
+.gmb_warum_itens_description{
+	background-color: #901f4a;
+	text-align: left;
+	font-size: 16px;
+}
+
+#gmb_warum a{
+	font-size: 16px;
+	background-color:#e7105b;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 370px;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#gmb_leistungen{
+	background-color: #9538b7;
+	padding: 30px 0 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+#gmb_leistungen_container{
+	background-color: rgb(102, 224, 183);
+	display: flex;
+	gap: 75px;
+}
+
+.gmb_leistungen_options{
+	background-color: #1b75ad;
+	width: 580px;
+	padding: 30px 25px;
+	border: 1px solid yellow;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+/*.gmb_leistungen_options ul{
+	list-style-image: url();
+}*/
+
+.gmb_leistungen_options ul li{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.gmb_leistungen_options h2{
+	text-align: center;
+	color: #5A70E5;
+	/*color: #45DFDF;*/
+}
+
+.gmb_leistungen_options a{
+	font-size: 16px;
+	background-color:#e7105b;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 370px;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #5A70E5;
+}
+
+#gmb_leistungen p{
+	padding: 0 290px;
+	font-size: 14px;
+}
+
+
+/*SEO*/
+
+.seo_hero_container{
+	background-color: #000;
+	display:flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 450px;
+}
+
