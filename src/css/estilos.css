@@ -59,6 +59,16 @@ header .menu li a:hover {
 	font-size: 36px;
 }
 
+.hero a{
+	border-radius: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
 .home_hero_container{
 	background-color: black;
 	display: flex;
@@ -76,12 +86,8 @@ header .menu li a:hover {
 }
 
 .home_hero_container a {
-	text-transform: uppercase;
 	background-color: yellow;
-	border-radius: 20px;
-	padding: 10px;
 	width: 370px;
-	text-align: center;
 }
 
 .uber_mich{
@@ -334,14 +340,8 @@ header .menu li a:hover {
 }
 
 #gmb_hero_container a{
-	font-size: 16px;
 	background-color:#e7105b;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 600;
 	width: 370px;
-	border-radius: 15px;
-	padding: 10px;
 }
 
 #gmb_warum{
@@ -481,7 +481,7 @@ header .menu li a:hover {
 
 .gmb_leistungen_options a{
 	font-size: 16px;
-	background-color:#e7105b;
+	background-color:#e82c6d;
 	text-transform: uppercase;
 	font-weight: 600;
 	width: 370px;
@@ -507,3 +507,65 @@ header .menu li a:hover {
 	width: 450px;
 }
 
+.seo_hero_container h2{
+	font-size: 16px;
+	font-weight: 500px;
+}
+
+.seo_hero_container a{
+	width: 360px;
+	background-color: orange;
+}
+
+#seo_was{
+	background-color: #1b75ad;
+	padding: 120px 0 0 0;
+}
+
+#seo_was h1{
+	font-size: 36px;
+	font-weight: 800;
+	text-align: center;
+}
+
+#seo_was_container{
+	display: flex;
+	gap: 80px;
+	background-color: aquamarine;
+	justify-content: center;
+}
+
+.seo_was_column{
+	background-color: orangered;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 540px;
+}
+
+.seo_was_list{
+	background-color: #8a0d39;
+	border-left: 4px solid black;
+	padding: 0 0 0 20px;
+	margin-bottom: 30px;
+}
+
+.seo_was_img_1{
+	width: 500px;
+	margin-bottom: 80px;
+}
+
+.seo_Was_hr_1{
+	width: 10px;
+}
+
+#seo_was p{
+	padding: 60px 0;
+	background-color: #587BE5;
+}
+
+.seo_was_line{
+	border-left: 3px dashed #e9b415;
+	height: 80px;
+	width: 5px;
+}
