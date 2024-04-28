@@ -519,7 +519,7 @@ header .menu li a:hover {
 
 #seo_was{
 	background-color: #1b75ad;
-	padding: 120px 0 0 0;
+	padding: 120px 0 60px 0;
 }
 
 #seo_was h1{
@@ -553,19 +553,70 @@ header .menu li a:hover {
 .seo_was_img_1{
 	width: 500px;
 	margin-bottom: 80px;
-}
-
-.seo_Was_hr_1{
-	width: 10px;
+	border-radius: 20px;
 }
 
 #seo_was p{
-	padding: 60px 0;
+	padding: 60px 0 0 0;
 	background-color: #587BE5;
 }
 
 .seo_was_line{
+	background-color: black;
 	border-left: 3px dashed #e9b415;
-	height: 80px;
-	width: 5px;
+	height: 140px;
+	width: 3px;
+	margin: 30px 0;
+}
+
+.seo_was_img_2{
+	width: 270px;
+}
+
+#seo_leistungen{
+	background-color: pink;
+	padding: 120px 0 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#seo_leistungen_container{
+	background-color: rgb(210, 27, 134);
+	gap: 60px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.seo_leistungen_column{
+	background-color: orangered;
+	width: 550px;
+}
+
+#seo_leistungen h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+}
+
+#seo_leistungen h1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#seo_leistungen p{
+	margin-bottom: 30px;
+}
+
+#seo_leistungen a{
+	background-color:#8a0d39;
+	border-radius: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	width: 370px;
 }
