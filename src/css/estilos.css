@@ -55,6 +55,15 @@ header .menu ul li a:hover{
 	font-weight: 600;
 }
 
+.gradient_1{
+	background: linear-gradient(180deg, rgba(12,21,98,1) 0%, rgba(4,7,34,1) 100%);
+}
+
+.gradient_2{
+	background: linear-gradient(90deg, rgba(90,114,229,1) 0%, rgba(72,217,224,1) 100%);
+}
+
+
 /*HOME*/
 
 .hero{
@@ -389,30 +398,29 @@ footer .nav-footer ul li:last-child{
 }
 
 .gmb_warum_line{
-	background-color: #ffc144;
 	display: flex;
 	justify-content: center;
 	gap: 15px;
 }
 
 .gmb_warum_itens{
-	background-color: #ff7344;
-	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 25px 20px;
 	border-radius: 15px;
 	width: 315px;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .gmb_warum_itens_title_line{
-	background-color: #c01f8a;
 	display: flex;
-	gap: 10px;
+	gap: 15px;
 	align-items: center;
 }
 
 .gmb_warum_itens_number{
-	background-color: #85105e;
-	font-size: 20;
+	font-size: 18px;
 	font-weight: 600;
 	display: flex;
 	justify-content: center;
@@ -420,16 +428,13 @@ footer .nav-footer ul li:last-child{
 	width: 33px;
 	height: 33px;
 	border-radius: 100%;
-	border: 1px solid blue;
+	border: 1px solid rgba(90,114,229,1);
 }
 
 .gmb_warum_itens_title{
-	background-color: #4b0734;
-	text-align: left;
 }
 
 .gmb_warum_itens_description{
-	background-color: #901f4a;
 	text-align: left;
 	font-size: 16px;
 }
