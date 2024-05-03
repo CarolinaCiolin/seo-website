@@ -363,17 +363,15 @@ footer .nav-footer ul li:last-child{
 }
 
 #gmb_warum{
-	background-color: #93c6e5;
+	background: radial-gradient(circle, rgba(94,48,164,0.6111694677871149) 0%, rgba(17,18,39,1) 62%);
 	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
 	padding: 120px 0;
 	align-items: center;
 }
 
 #gmb_warum_title_container{
-	background-color: #FBFF44;
 	display: flex;
 	justify-content: center;
 	gap: 15px;
@@ -381,15 +379,16 @@ footer .nav-footer ul li:last-child{
 
 #gmb_warum_title_container img{
 	width: 65px;
+	margin-bottom: 30px;
 }
 
 #gmb_warum_title h3{
+	color: #42CAD0;
 	font-size: 20px;
-	text-align: left;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 10px;
-	margin-bottom: -13px;
+	margin-bottom: -10px;
 }
 
 #gmb_warum_title h2{
@@ -401,6 +400,7 @@ footer .nav-footer ul li:last-child{
 	display: flex;
 	justify-content: center;
 	gap: 15px;
+	margin-bottom: 15px;
 }
 
 .gmb_warum_itens{
@@ -419,19 +419,21 @@ footer .nav-footer ul li:last-child{
 	align-items: center;
 }
 
-.gmb_warum_itens_number{
-	font-size: 18px;
-	font-weight: 600;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 33px;
-	height: 33px;
-	border-radius: 100%;
-	border: 1px solid rgba(90,114,229,1);
+.gmb_warum_itens_number {
+    background: linear-gradient(180deg, rgba(12,21,98,1) 0%, rgba(4,7,34,1) 100%);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+	box-shadow: 1px 1px 0 1px rgba(90,114,229,1), -1px -1px 0 1px rgba(72,217,224,1), 6px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
 .gmb_warum_itens_title{
+	font-weight: bold;
 }
 
 .gmb_warum_itens_description{
@@ -440,8 +442,8 @@ footer .nav-footer ul li:last-child{
 }
 
 #gmb_warum a{
-	background-color:#e7105b;
 	width: 370px;
+	margin-top: 15px;
 }
 
 #gmb_leistungen{
