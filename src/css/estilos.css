@@ -7,22 +7,21 @@ body {
 	font-family: "Poppins", sans-serif; /*se nao tiver Poppins instalado, usar alguma fonte sans-serif*/
 	margin: 0 auto; /*centralizar o conteudo do site. margin 0 em cima e embaixo e AUTO na esquerda e direita. tb poderia ser: 0 auto 0 auto*/
 	max-width: 1440px;
-	background: #101126;
+	background: #000;
 	background-size: 120% 120%;
 }
 
 header{
-	background-color: blue;
+	background-color: #101126;
 	display: flex; /*FLEX funciona com o conceito de pai e filhos. Altera tudo o que estiver dentro do elemento que possui a classse em questao. O FLEX tem por padrao um flex-direction: row*/
-    /*flex-direction: row;*/
 	justify-content: space-between; /*propriedade do FLEX*/
 	align-items: center; /*propriedade do FLEX*/
 	padding: 0 40px;
 	height: 80px;
+	border-bottom:1px solid rgb(12, 144, 221);
 }
 
 header .logo{
-	background-color: orange;
 	width: 265px;
 }
 
@@ -46,6 +45,15 @@ header .menu ul li a:hover{
 
 /*COMMUM*/
 
+.hero{
+	min-height: calc(100vh - 80px); /*VH: viewport height ou altura da janela. Neste caso para deixar a .home ocupar toda a altura da janela. 80px seria a altura do menu*/
+	padding: 0 70px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	background-color: green;
+}
+
 .button{
 	border-radius: 15px;
 	text-transform: uppercase;
@@ -63,21 +71,16 @@ header .menu ul li a:hover{
 	background: linear-gradient(90deg, rgba(90,114,229,1) 0%, rgba(72,217,224,1) 100%);
 }
 
+.gradient_3{
+	background: linear-gradient(90deg, rgba(248,230,59,1) 0%, rgba(236,155,32,1) 100%);
+}
+
 .gradient_bg{
 	background: linear-gradient(180deg, rgba(16,17,38,1) 0%, rgba(64,66,128,1) 100%);
 }
 
 
 /*HOME*/
-
-.hero{
-	background-color: green;
-	min-height: calc(100vh - 80px); /*VH: viewport height ou altura da janela. Neste caso para deixar a .home ocupar toda a altura da janela. 80px seria a altura do menu*/
-	padding: 0 70px;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-}
 
 .hero h1{
 	font-size: 36px;
@@ -509,8 +512,20 @@ footer .nav-footer ul li:last-child{
 
 /*SEO*/
 
+#seo_hero_bg{
+	background-image: linear-gradient(90deg, rgba(90,114,229,0.4) 0%, rgba(72,217,224,0.5) 100%), url("../img/sl_021821_40890_02.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#seo_hero_bg img{
+	width: 500px;
+}
+
 .seo_hero_container{
-	background-color: #000;
 	display:flex;
 	flex-direction: column;
 	gap: 30px;
@@ -524,7 +539,6 @@ footer .nav-footer ul li:last-child{
 
 .seo_hero_container a{
 	width: 360px;
-	background-color: orange;
 }
 
 #seo_was{
@@ -590,7 +604,8 @@ footer .nav-footer ul li:last-child{
 }
 
 #seo_leistungen{
-	background-color: pink;
+	background-image: linear-gradient(180deg, rgba(16,17,38,0.8) 0%, rgba(16,17,38,0.8) 100%), url("../img/seo-leistungen.jpg");
+	background-size: cover;
 	padding: 120px 0 60px 0;
 	display: flex;
 	flex-direction: column;
@@ -598,7 +613,7 @@ footer .nav-footer ul li:last-child{
 }
 
 #seo_leistungen_container{
-	background-color: rgb(210, 27, 134);
+	background-color: #8a0d39;
 	gap: 60px;
 	display: flex;
 	margin-bottom: 20px;
@@ -614,14 +629,18 @@ footer .nav-footer ul li:last-child{
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 400;
+	letter-spacing: 10px;
+	margin-bottom: -10px;
+	color: #F8E63B;
 }
 
 #seo_leistungen h2{
 	text-align: center;
-	color: none;
-	font-size: 30px;
+	font-size: 40px;
+	font-weight: 800;
+	color: #101126;
 	margin-bottom: 20px;
-	-webkit-text-stroke: 1px white;
+	text-shadow: 0.5px 0.5px 0 #fff,-0.5px 0.5px 0 #fff,-0.5px -0.5px 0 #fff,0.5px -0.5px 0 #fff;
 }
 
 #seo_leistungen p{
@@ -629,12 +648,7 @@ footer .nav-footer ul li:last-child{
 }
 
 #seo_leistungen a{
-	background-color:#8a0d39;
-	border-radius: 15px;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 10px;
-	font-size: 16px;
-	font-weight: 600;
 	width: 370px;
+	color: #101126;
+	font-weight: bold;
 }
